@@ -30,4 +30,4 @@ https://www.freecodecamp.org/news/write-your-own-browser-extensions/
 
 - Also with glassdoor, I didn't feel it was necessary to remove the "Show More" button underneath some of the longer reviews and responses. All of the text for the review and the employer response are shown on the page. The show more button is just leftover from when the text was initially hidden.
 
-- If you don't have an account with indeed, you will notice a small window start to popup and immediately go away a few seconds after you load each page. This is just the login prompt being removed from the page. Aide from that everything else should function as normal with no interruptions.
+- If you don't have an account with indeed, you will notice a small window start to popup and immediately go away a few seconds after you load each page. This is just the login prompt being removed from the page. Aside from that everything else should function as normal with no interruptions.
