@@ -26,8 +26,12 @@ https://www.freecodecamp.org/news/write-your-own-browser-extensions/
 ```
 
 ## Caveats with the extension
-- The implementation for Glassdoor is a little odd. Since it is built in react the browser doesn't actually "navigate" when you click on another page. That being said I wasn't able to find a clean approach for getting this to run everytime you switched pages. How this works is it checks for the login overlay and any collapsed text every second for 5 minutes. If you ever navigate to a new page and the login overlay doesn't go away after 1 second simply refresh the page and everything should be good. I just didn't want it running indefinitely in the background. If you would like this to run for a shorter or longer amount of time you can change the number at the end of the setTimeout call at the bottom of the file. This is the amount of time the script will run in milliseconds.
+- When switching pages on glassdoor, it may occasionally not put you back at the top of the page. Glassdoor takes forever to load the dom elements when the login overlay gets removed, so I am currently just delaying it 2 seconds before attempting to scroll back to the top. It your browser is taking longer to load the page you can simply change the number in the below line of code. It is the amount of time it will wait to scroll to the top in milliseconds. Or if you're not lazy you could just scroll to the top.
+```
+setTimeout(() => {
+    window.scrollTo(0,0)
+}, 2000) <-- this is the number you would need to change
 
-- Also with glassdoor, I didn't feel it was necessary to remove the "Show More" button underneath some of the longer reviews and responses. All of the text for the review and the employer response are shown on the page. The show more button is just leftover from when the text was initially hidden.
+```
 
-- If you don't have an account with indeed, you will notice a small window start to popup and immediately go away a few seconds after you load each page. This is just the login prompt being removed from the page. Aside from that everything else should function as normal with no interruptions.
+- Also with glassdoor, I didn't feel it was necessary to remove the "Show More" button underneath some of the longer reviews and responses. All of the text for the review and the employer response are shown on the page. The show more button is just leftover from when the text was initially hidden. If for some reason it is not showing all of the text, simply refresh the page.

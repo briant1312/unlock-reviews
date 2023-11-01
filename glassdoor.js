@@ -1,17 +1,34 @@
-const removeOverlay = setInterval(() => {
-    const overlay = document.querySelector("#HardsellOverlay")
-    if (overlay) {
-        overlay.remove()
-        document.body.style.setProperty("overflow", "auto")
-        document.body.style.setProperty("position", "static")
-    }
+const overlay = document.querySelector("#HardsellOverlay")
+if (overlay) {
+    overlay.remove()
+    document.body.style.setProperty("overflow", "auto")
+    document.body.style.setProperty("position", "static")
+}
 
-    const hiddenText = document.querySelectorAll('[class*="isCollapsed"]')
+let hiddenText = document.querySelectorAll('[class*="isCollapsed"]')
+hiddenText.forEach(el => {
+    el.className = ""
+})
+
+const observer = new MutationObserver(entries => {
+    entries.forEach(entry => {
+        entry.addedNodes.forEach(node => {
+            if (node.id == "HardsellOverlay") {
+                node.remove()
+                document.body.style.setProperty("overflow", "auto")
+                document.body.style.setProperty("position", "static")
+
+                setTimeout(() => {
+                    window.scrollTo(0,0)
+                }, 2000)
+            }
+        }) 
+    })
+
+    hiddenText = document.querySelectorAll('[class*="isCollapsed"]')
     hiddenText.forEach(el => {
         el.className = ""
     })
-}, 1000)
+})
 
-setTimeout(() => {
-    clearInterval(removeOverlay)
-}, 320000)
+observer.observe(document.body, { childList: true, subtree: true })
