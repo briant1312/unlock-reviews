@@ -1,0 +1,15 @@
+{
+  "manifest_version":3,
+  "version":"1.0",
+  "name":"Unlock Reviews",
+  "content_scripts": [
+    {
+      "matches": ["https://www.indeed.com/cmp/*"],
+      "js": ["indeed.js"]
+    },
+    {
+      "matches": ["https://www.glassdoor.com/Reviews/*"],
+      "js": ["glassdoor.js"]
+    }
+  ]
+}
