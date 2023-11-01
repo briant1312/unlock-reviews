@@ -1,10 +1,10 @@
-# Unluck Review
+# Unlock Review
 While applying for jobs I realized how irritating it is trying to look at reviews for different companies on indeed and glassdoor. They force you to create an account and then review your past companies to see reviews. That being said, as a developer thats not what I was going to do. So I instead decided to make a browswer extension that would allow me to see all of the reviews without having to be logged in and without reviewing my previous employers. Once you have set up the browser extension you are free to look at whatever you would like free of hassle... mostly.
 
 ## How to Install
 I don't currenlty have this packaged as an official extension. I may or may not do that at some later time. I have tested this on chrome and firefox and it works on both. That being said I would recommend using chrome as you will have load the extension everytime you open firefox. The first thing you will need to do is clone this repo to your local machine in whatever directory you would like. 
 ```sh
-git clone https://github.com/briant1312/unluck-reviews
+git clone https://github.com/briant1312/unlock-reviews
 ```
 ### Installing for Chrome
 1. To start, you will need to open your browser and navigate to chrome://extensions/
