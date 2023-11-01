@@ -14,4 +14,4 @@ const removeOverlay = setInterval(() => {
 
 setTimeout(() => {
     clearInterval(removeOverlay)
-}, 180000)
+}, 320000)
