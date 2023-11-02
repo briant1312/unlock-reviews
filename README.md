@@ -1,8 +1,8 @@
 # Unlock Reviews
-While applying for jobs I realized how irritating it is trying to look at reviews for different companies on indeed and glassdoor. They force you to create an account and then review your past companies to see reviews. That being said, as a developer thats not what I was going to do. So I instead decided to make a browswer extension that would allow me to see all of the reviews without having to be logged in and without reviewing my previous employers. Once you have set up the browser extension you are free to look at whatever you would like free of hassle... mostly.
+While applying for jobs I realized how irritating it is trying to look at reviews for different companies on indeed and glassdoor. They force you to create an account and then review your past companies to see reviews. That being said, as a developer thats not what I was going to do. So I instead decided to make a browser extension that would allow me to see all of the reviews without having to be logged in and without reviewing my previous employers. Once you have set up the browser extension you are free to look at whatever you would like free of hassle... mostly.
 
 ## How to Install
-I don't currenlty have this packaged as an official extension. I may or may not do that at some later time. I have tested this on chrome and firefox and it works on both. That being said I would recommend using chrome as you will have load the extension everytime you open firefox. The first thing you will need to do is clone this repo to your local machine in whatever directory you would like. 
+I don't currently have this packaged as an official extension. I may or may not do that at some later time. I have tested this on chrome and firefox and it works on both. That being said I would recommend using chrome as you will have load the extension everytime you open firefox. The first thing you will need to do is clone this repo to your local machine in whatever directory you would like. 
 ```sh
 git clone https://github.com/briant1312/unlock-reviews
 ```
@@ -20,7 +20,7 @@ git clone https://github.com/briant1312/unlock-reviews
 5. You will unfortunately have to do this everytime you launch firefox
 
 ### Issues with installing
-FreeCodeCamp has a really good tutorial for creating your own browswer extension at the following url
+FreeCodeCamp has a really good tutorial for creating your own browser extension at the following url
 ```
 https://www.freecodecamp.org/news/write-your-own-browser-extensions/
 ```

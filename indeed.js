@@ -1,5 +1,4 @@
 const observer = new MutationObserver(entries => {
-    console.log("observer triggered")
     entries.forEach(entry => {
         entry.addedNodes.forEach(node => {
             if (node.classList.contains("gnav-mq5q72")) {
